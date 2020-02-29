@@ -1,10 +1,78 @@
 #main-menu {
     .__main-menu-wrapper {
-        .__main-menu-item {
-            border-radius: 50%;
-            background-color: gray;
-            height: 50px;
-            width: 50px;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .__main-menu-item-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 33%;
+            margin: 10px 0;
+            .__main-menu-item {
+                border-radius: 50%;
+                background-color: gray;
+                height: 200px;
+                width: 200px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                .__main-menu-item-heading {
+                    width: 100%;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
         }
     }
+
+    // background images 
+    #pizza {
+        background-image: url("../img/menu/pizza2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #pork {
+        background-image: url("../img/menu/wieprzowina.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #chicken {
+        background-image: url("../img/menu/drob.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #pasta {
+        background-image: url("../img/menu/makaron.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #fish {
+        background-image: url("../img/menu/ryba.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #bar {
+        background-image: url("../img/menu/dania-barowe.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #snack {
+        background-image: url("../img/menu/przystawki.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #salad {
+        background-image: url("../img/menu/salatka.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #drink {
+        background-image: url("../img/menu/napoje.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
 }
