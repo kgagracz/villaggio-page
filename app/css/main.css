@@ -53,7 +53,8 @@
       #main-menu .__main-menu-wrapper .__main-menu-item-wrapper .__main-menu-item .__main-menu-item-heading {
         width: 100%;
         text-align: center;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        color: white; }
 
 #main-menu #pizza {
   background-image: url("../img/menu/pizza2.jpg");
