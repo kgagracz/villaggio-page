@@ -1,0 +1,23 @@
+{
+  "name": "villaggio-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgagracz/villaggio-page.git"
+  },
+  "author": "Krystian Gagracz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgagracz/villaggio-page/issues"
+  },
+  "homepage": "https://github.com/kgagracz/villaggio-page#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
