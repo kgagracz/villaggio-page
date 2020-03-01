@@ -6,6 +6,6 @@ for (let i = 0; i <= options.length; i++) {
         console.log('klik na ' + options[i].id);
         let menuContainer = document.getElementsByClassName('menu-added');
         console.log(menuContainer)
-        menuContainer.setAttribute('')
+        menuContainer.setAttribute('id', options[i].id);
     })
 };
