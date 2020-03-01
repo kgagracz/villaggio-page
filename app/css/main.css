@@ -112,19 +112,20 @@
     transition: all 0.2s;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    cursor: pointer; }
   .button-container .button-icon-container:hover {
     background-color: #f3dccc; }
 
 .menu-added {
-  display: none;
+  transition: all 0.3s;
+  z-index: -10;
   opacity: 0;
   position: absolute;
   height: 70vh;
   width: 70vh;
   background: #f3dcc0;
   background: radial-gradient(circle, #f3dcc0 0%, #803217 100%);
-  transition: all 0.2s;
   border-radius: 10px; }
 
 .main-footer {

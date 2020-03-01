@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     let options = document.getElementsByClassName('__main-menu-item');
     let exitButtons = document.getElementsByClassName('button-icon-container');
-    console.log(exitButtons);
 
-    
-    
+
+
     for (let i = 0; i < options.length; i++) {
         options[i].addEventListener('click', function () {
             console.log('klik na ' + options[i].id);
@@ -37,26 +36,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 showMenu('drink-display');
             }
             function showMenu(id) {
-                document.getElementById(id).style.display = 'block';
+                document.getElementById(id).style.zIndex = '10';
                 document.getElementById(id).style.opacity = '1';
             }
-            for (let j = 0; j < exitButtons.length; j++ ) {
+            for (let j = 0; j < exitButtons.length; j++) {
 
                 exitButtons[j].addEventListener('click', function () {
                     console.log('click exit');
                     let allMenus = document.getElementsByClassName('menu-added');
                     console.log(allMenus[0]);
-                    allMenus[j].style.display = 'none';
+                    allMenus[j].style.zIndex = '-10';
                 })
             }
         })
-        
     };
 });
-
-
-
-
-
-
-
