@@ -33,7 +33,7 @@
 #main-menu {
   background-color: #f3dccc; }
   #main-menu .__main-menu-wrapper {
-    margin-top: 50px;
+    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -52,12 +52,17 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        transition: all 0.2s;
+        cursor: pointer; }
         #main-menu .__main-menu-wrapper .__main-menu-item-wrapper .__main-menu-item .__main-menu-item-heading {
           width: 100%;
           text-align: center;
           text-transform: uppercase;
           color: white; }
+      #main-menu .__main-menu-wrapper .__main-menu-item-wrapper .__main-menu-item:hover {
+        height: 250px;
+        width: 250px; }
   #main-menu #pizza {
     background-image: url("../img/menu/pizza2.jpg");
     background-size: cover;
@@ -95,12 +100,31 @@
     background-size: cover;
     background-repeat: no-repeat; }
 
+.button-container {
+  height: 50px;
+  width: 100%;
+  background-color: #5d0d0c;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 10px; }
+  .button-container .button-icon-container {
+    width: 50px;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .button-container .button-icon-container:hover {
+    background-color: #f3dccc; }
+
 .menu-added {
   display: none;
+  opacity: 0;
   position: absolute;
   height: 70vh;
   width: 70vh;
-  background-color: gray; }
+  background-color: gray;
+  transition: all 0.2s;
+  border-radius: 10px; }
 
 .main-footer {
   background-color: #37c837; }

@@ -1,7 +1,7 @@
 #main-menu {
     background-color: $main-color;
     .__main-menu-wrapper {
-        margin-top: 50px;
+        padding-top: 50px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -21,12 +21,18 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
+                transition: all 0.2s;
+                cursor: pointer;
                 .__main-menu-item-heading {
                     width: 100%;
                     text-align: center;
                     text-transform: uppercase;
                     color: white;
                 }
+            }
+            .__main-menu-item:hover {
+                height: 250px;
+                width: 250px;
             }
         }
     }
