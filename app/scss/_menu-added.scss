@@ -5,8 +5,8 @@
     width: 100%;
     background-color: $secondary-color;
     display: flex;
-    justify-content: flex-end;
     border-radius: $box-border-radius;
+    justify-content: flex-end;
     
     .button-icon-container {
         width: 50px;
@@ -27,7 +27,8 @@
     position: absolute;
     height: 70vh;
     width: 70vh;
-    background-color: gray;
+    background: rgb(243,220,192);
+    background: radial-gradient(circle, rgba(243,220,192,1) 0%, rgba(128,50,23,1) 100%);
     transition: all 0.2s;
     border-radius: $box-border-radius;
 }
