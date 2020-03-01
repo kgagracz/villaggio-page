@@ -1,4 +1,5 @@
 #main-menu {
+    background-color: $main-color;
     .__main-menu-wrapper {
         margin-top: 50px;
         display: flex;
@@ -9,6 +10,7 @@
             display: flex;
             justify-content: center;
             width: 33%;
+            height: 250px;
             margin: 10px 0;
             .__main-menu-item {
                 border-radius: 50%;
