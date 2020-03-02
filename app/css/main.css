@@ -31,7 +31,7 @@
   min-height: 70vh; }
 
 #main-menu {
-  background-color: #f3dccc; }
+  background-image: url("../img/menu/background.jpg"); }
   #main-menu .__main-menu-wrapper {
     padding-top: 50px;
     display: flex;
@@ -118,14 +118,13 @@
     background-color: #f3dccc; }
 
 .menu-added {
-  transition: all 0.3s;
+  transition: all 0.5s;
   z-index: -10;
   opacity: 0;
   position: absolute;
   height: 70vh;
   width: 70vh;
-  background: #f3dcc0;
-  background: radial-gradient(circle, #f3dcc0 0%, #803217 100%);
+  background-image: url("../img/menu/menu-background.jpg");
   border-radius: 10px; }
 
 .main-footer {
