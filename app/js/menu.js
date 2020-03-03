@@ -3,20 +3,14 @@ document.addEventListener("DOMContentLoaded", event => {
   let exitButtons = document.getElementsByClassName("button-icon-container");
 
   for (let i = 0; i < options.length; i++) {
-    options[i].addEventListener("click", function() {
+    options[i].addEventListener("click", function () {
       console.log("you clicked " + options[i].id);
       dispaly();
 
-      for (let j = 0; j < exitButtons.length; j++) {
-        exitButtons[j].addEventListener("click", function() {
-          console.log("exit");
-          let allMenus = document.getElementsByClassName("menu-added");
-          allMenus[j].style.zIndex = "-10";
-          clicked();
-        });
-      }
+      
 
       function dispaly() {
+        console.log("you clicked " + options[i].id);
         if (options[i].id == "pizza") {
           showMenu("pizza-display");
         } else if (options[i].id == "pork") {
@@ -42,29 +36,14 @@ document.addEventListener("DOMContentLoaded", event => {
       function showMenu(id) {
         document.getElementById(id).style.zIndex = "10";
         document.getElementById(id).style.opacity = "1";
-        clicked(id);
       }
-
-      function clicked(id) {
-        let isClicked;
-        if (document.getElementById(id).style.opacity == 1) {
-          isClicked = true;
-          console.log(isClicked);
-        } else {
-          isClicked = false;
-          console.log(isClicked);
-        }
-        return mask(isClicked)
-      }
-      function mask(isClicked) {
-        if (isClicked == true) {
-          let maskDiv = document.createElement("div");
-          maskDiv.setAttribute("class", "mask");
-          document.body.appendChild(maskDiv);
-          console.log(isClicked);
-        } else {
-        }
-      }
+    });
+  }
+  for (let j = 0; j < exitButtons.length; j++) {
+    exitButtons[j].addEventListener("click", function () {
+      console.log("exit");
+      let allMenus = document.getElementsByClassName("menu-added");
+      allMenus[j].style.zIndex = "-10";
     });
   }
 });

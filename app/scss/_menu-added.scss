@@ -3,7 +3,8 @@
 .button-container {
   height: 50px;
   width: 100%;
-  background-color: $secondary-color;
+  background: rgb(198,158,147);
+  background: linear-gradient(225deg, rgba(198,158,147,1) 0%, rgba(93,13,12,1) 2%, rgba(243,220,204,1) 100%);
   display: flex;
   border-radius: $box-border-radius;
   justify-content: flex-end;

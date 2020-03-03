@@ -103,7 +103,8 @@
 .button-container {
   height: 50px;
   width: 100%;
-  background-color: #5d0d0c;
+  background: #c69e93;
+  background: linear-gradient(225deg, #c69e93 0%, #5d0d0c 2%, #f3dccc 100%);
   display: flex;
   border-radius: 10px;
   justify-content: flex-end; }
