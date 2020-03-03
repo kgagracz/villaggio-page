@@ -30,6 +30,13 @@
   background-position: center;
   min-height: 70vh; }
 
+.mask {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -10;
+  background-color: rgba(0, 0, 0, 0.8); }
+
 #main-menu {
   background-image: url("../img/menu/background.jpg"); }
   #main-menu .__main-menu-wrapper {

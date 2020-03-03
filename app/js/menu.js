@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", event => {
   for (let i = 0; i < options.length; i++) {
     options[i].addEventListener("click", function () {
       console.log("you clicked " + options[i].id);
+      console.log(document.getElementById('main-menu'))
+      document.querySelector('.mask').style.zIndex = '10';
       dispaly();
 
       
@@ -44,6 +46,7 @@ document.addEventListener("DOMContentLoaded", event => {
       console.log("exit");
       let allMenus = document.getElementsByClassName("menu-added");
       allMenus[j].style.zIndex = "-10";
+      document.querySelector('.mask').style.zIndex = '-10';
     });
   }
 });
