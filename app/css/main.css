@@ -144,8 +144,10 @@
   position: absolute;
   top: 100px;
   width: 70vh;
+  height: 70vh;
   background-image: url("../img/menu/menu-background.jpg");
-  border-radius: 10px; }
+  border-radius: 10px;
+  overflow: scroll; }
   .menu-added .__menu-added-table {
     width: 100%; }
     .menu-added .__menu-added-table tr {
